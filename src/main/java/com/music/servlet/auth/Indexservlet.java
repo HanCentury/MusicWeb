@@ -28,7 +28,7 @@ public class Indexservlet extends HttpServlet {
         context.setVariable("username",user.getUsername());
         context.setVariable("music_List",service.getMusicList());
         ThymeleafUtil.process("index.html",context,resp.getWriter());
-        System.out.println(123);
+
     }
 
 }
