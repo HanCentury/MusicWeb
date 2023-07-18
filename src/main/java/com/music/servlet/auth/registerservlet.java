@@ -30,6 +30,7 @@ public class registerservlet extends HttpServlet {
         resp.sendRedirect("login");
     }
     //this was a word of test
+    //this was second test
 }
 
 
