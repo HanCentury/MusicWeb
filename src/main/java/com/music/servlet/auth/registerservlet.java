@@ -29,8 +29,6 @@ public class registerservlet extends HttpServlet {
         if(service.insert(username,password,req.getSession())==1);
         resp.sendRedirect("login");
     }
-    //this was a word of test
-    //this was second test
 }
 
 
