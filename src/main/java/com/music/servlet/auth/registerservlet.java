@@ -9,6 +9,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.thymeleaf.context.Context;
+import org.w3c.dom.ls.LSOutput;
+
 import java.io.IOException;
 
 @WebServlet("/register")
@@ -29,7 +31,7 @@ public class registerservlet extends HttpServlet {
         if(service.insert(username,password,req.getSession())==1);
         resp.sendRedirect("login");
     }
-    //test
+
 }
 
 
