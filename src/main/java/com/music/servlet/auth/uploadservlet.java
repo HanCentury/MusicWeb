@@ -31,8 +31,6 @@ public class uploadservlet extends HttpServlet {
         Context context=new Context();
         user user= (user) req.getSession().getAttribute("user");
         context.setVariable("username",user.getUsername());
-
-        System.out.println();
         ThymeleafUtil.process("upload.html",context,resp.getWriter());
     }
     @Override
